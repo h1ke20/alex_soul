@@ -659,8 +659,9 @@ body {
 }
 .how-we-work-timeline--container .timeline-step:nth-child(odd) .step-container
 {
-    left:-490px;
+    left:-435px;
     text-align:right;
+    top: -10px;
 }
 .how-we-work-timeline--container .timeline-step:nth-child(odd) .step-container.scrolled
 {
