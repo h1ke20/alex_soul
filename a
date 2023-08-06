@@ -1,0 +1,102 @@
+<div class="container">
+  <div class="row how-we-work-timeline--container">
+    <div class="col-sm-12">
+<div class="timeline">
+					<div class="timeline-label">For Attorneys
+					</div>
+					<ul>
+						<li class="timeline-step crucial-step">
+							<div class="step-container wow fadeInLeft" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
+								<h5 class="text-blue">1. Intake
+								</h5>
+							</div>
+						</li>
+						<li class="timeline-step regular-step">
+							<div class="step-container wow fadeInRight" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;">
+								<img width="100" class="timeline-image-circle" src="https://randomuser.me/api/portraits/women/48.jpg">
+								<p class="small-margin-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat cum ut odit sequi esse rerum dolorem nesciunt sapiente? Pariatur cumque iusto excepturi provident repudiandae nisi sed earum illum alias.
+								</p>
+							</div>
+						</li>
+                  <li class="timeline-step crucial-step">
+							<div class="step-container wow fadeInLeft" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
+								<h5 class="text-blue">2. Search
+								</h5>
+							</div>
+						</li>
+						<li class="timeline-step regular-step">
+							<div class="step-container wow fadeInLeft" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
+								<img width="100" class="timeline-image-circle" src="https://picsum.photos/200/?random
+">
+							<p class="small-margin-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat cum ut odit sequi esse rerum dolorem nesciunt sapiente? Pariatur cumque iusto excepturi provident repudiandae nisi sed earum illum alias.
+								</p>
+							</div>
+						</li>
+            <li class="timeline-step crucial-step">
+							<div class="step-container wow fadeInLeft" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
+								<h5 class="text-blue">3. Share
+								</h5>
+							</div>
+						</li>
+						<li class="timeline-step regular-step">
+							<div class="step-container wow fadeInRight" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;">
+								<img width="100" class="timeline-image-circle" src="https://picsum.photos/200/?image=22">
+							<p class="small-margin-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat cum ut odit sequi esse rerum dolorem nesciunt sapiente? Pariatur cumque iusto excepturi provident repudiandae nisi sed earum illum alias.
+								</p>
+							</div>
+						</li>
+
+                        <li class="timeline-step crucial-step">
+							<div class="step-container wow fadeInLeft" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
+								<h5 class="text-blue">4. Retain								</h5>
+							</div>
+						</li>
+						<li class="timeline-step regular-step">
+							<div class="step-container wow fadeInLeft" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
+								<img width="100" class="timeline-image-circle" src="https://picsum.photos/200/?image=39">
+							<p class="small-margin-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat cum ut odit sequi esse rerum dolorem nesciunt sapiente? Pariatur cumque iusto excepturi provident repudiandae nisi sed earum illum alias.
+								</p>
+							</div>
+						</li>
+					</ul>
+					<div class="process-transition wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+						<h4 class="text-blue">You work with the expert directly.
+						</h4>
+					</div>
+					<div class="timeline">
+						<div class="timeline-label">For Experts
+						</div>
+						<ul>
+							<li class="timeline-step regular-step">
+								<div class="step-container wow fadeInLeft" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
+									<img width="100" class="timeline-image-circle" src="https://picsum.photos/200/?image=23">
+									<p class="small-margin-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat cum ut odit sequi esse rerum dolorem nesciunt sapiente? Pariatur cumque iusto excepturi provident repudiandae nisi sed earum illum alias.
+								</p>
+								</div>
+							</li>
+							<li class="timeline-step regular-step">
+								<div class="step-container wow fadeInRight" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;">
+									<img width="100" class="timeline-image-circle" src="https://picsum.photos/200/?image=32">
+							<p class="small-margin-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat cum ut odit sequi esse rerum dolorem nesciunt sapiente? Pariatur cumque iusto excepturi provident repudiandae nisi sed earum illum alias.
+								</p>
+								</div>
+							</li>
+							<li class="timeline-step regular-step">
+								<div class="step-container wow fadeInLeft" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
+									<img width="100" class="timeline-image-circle" src="https://picsum.photos/200/?image=34">
+							<p class="small-margin-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quaerat cum ut odit sequi esse rerum dolorem nesciunt sapiente? Pariatur cumque iusto excepturi provident repudiandae nisi sed earum illum alias.
+								</p>
+								</div>
+							</li>
+							<li class="timeline-step crucial-step">
+								<div class="step-container wow fadeInRight" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: fadeInRight;">
+									<h5 class="text-blue">You work with the attorney directly.
+									</h5>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+    </div>
+  </div>
+</div>
