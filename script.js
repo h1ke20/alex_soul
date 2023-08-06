@@ -26,6 +26,17 @@ $(document).ready(function () {
             scrollTop: $(".form_container").offset().top
         }, 500);
     });
+    $(".services_button").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(".container").offset().top
+        }, 500);
+    });
+    $(".soul_button").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(".fourth_container").offset().top
+        }, 500);
+    });
+
     $('.contacts_button').click(function (event){
         $('.contacts_container').toggleClass('active');
         $('body').toggleClass('lock');
