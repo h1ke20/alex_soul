@@ -168,7 +168,7 @@ body.lock{
 .info_container{
     width: 100%;
     height: 44em;
-    background: url("img/wallpaper2.jpg") 0 0/cover no-repeat;
+    background: url("img/background_img.jpeg") 0 0/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
