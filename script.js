@@ -46,6 +46,11 @@ $(document).ready(function () {
             scrollTop: $(".fourth_container").offset().top
         }, 500);
     });
+    $(".aboutMe_button").click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(".sixth_container").offset().top
+        }, 500);
+    });
 
     $('.contacts_button').click(function (event){
         $('.contacts_container').toggleClass('active');
