@@ -792,7 +792,7 @@ body {
 .form_container{
     width: 100%;
     height: content-box;
-    background-color: #53BCD9;
+    background-color: #143258;
 }
 
 .form_title_holder{
@@ -801,7 +801,7 @@ body {
     text-align: center;
     font-family: 'Ysabeau Infant', sans-serif;
     font-size: 25px;
-    color: #143258;
+    color: #ffffff;
     padding: 40px 0 20px 0;
     text-transform: uppercase;
 }
@@ -874,7 +874,7 @@ form button {
 }
 
 form button:hover{
-    background-color: #143258;
+    background-color: #2262d5;
 
 }
 .form_holder form{
