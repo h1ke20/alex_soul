@@ -648,7 +648,8 @@ body {
 }
 .how-we-work-timeline--container .timeline-step:nth-child(2n) .step-container:before
 {
-    left:-80px
+    left:-80px;
+    top: 10px;
 }
 @media (max-width:991px)
 {
@@ -659,13 +660,11 @@ body {
 }
 .how-we-work-timeline--container .timeline-step:nth-child(odd) .step-container
 {
-    left:-435px;
+    left:-545px;
     text-align:right;
     top: -10px;
 }
-.how-we-work-timeline--container .timeline-step:nth-child(odd) .step-container.scrolled
-{
-}
+
 @media (max-width:991px)
 {
     .how-we-work-timeline--container .timeline-step:nth-child(odd) .step-container
@@ -673,6 +672,7 @@ body {
         left:40px;
         text-align:left
     }
+
 }
 .how-we-work-timeline--container .timeline-step:nth-child(odd) .step-container:before
 {
@@ -692,8 +692,8 @@ body {
     left:50%;
     -webkit-transform:translateX(-50%);
     transform:translateX(-50%);
-    width:8px;
-    height:8px;
+    /*width:8px;*/
+    /*height:8px;*/
     border-radius:50%;
     background:inherit;
     -webkit-box-sizing: content-box;
@@ -703,6 +703,7 @@ body {
 }
 .small-margin-top{
     color: #143258;
+    font-family: 'Ysabeau Infant', sans-serif;
 }
 .how-we-work-timeline--container .process-transition
 {
@@ -721,7 +722,7 @@ body {
 .how-we-work-timeline--container .crucial-step:after
 {
     top:-5px;
-    border:10px solid #fff;
+    /*border:10px solid #fff;*/
     background:#143258;
 }
 @media (max-width:991px)
@@ -746,7 +747,7 @@ body {
 .how-we-work-timeline--container .regular-step:after
 {
     top:120px;
-    border:10px solid #fff;
+    /*border:10px solid #fff;*/
     background: #2262d5;
 }
 @media (max-width:991px)
@@ -760,13 +761,14 @@ body {
 {
     position:relative;
     bottom:0;
-    width:338px
+    width:445px
 }
 @media (max-width:991px)
 {
     .how-we-work-timeline--container .step-container
     {
-        padding:24px 0
+        padding:24px 0;
+        width:280px;
     }
 }
 .how-we-work-timeline--container .step-container:before
@@ -798,6 +800,7 @@ body {
     height: content-box;
     text-align: center;
     font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 25px;
     color: #ffffff;
     padding: 40px 0 20px 0;
 }
@@ -856,7 +859,7 @@ form textarea {
 
 form button {
     height: 50px;
-    width: 100%;
+    width: 35%;
     cursor: pointer;
     border: 1px solid #ffffff;
     background: none;
@@ -870,16 +873,126 @@ form button {
 }
 
 form button:hover{
-    background-color: #2262d5;
+    background-color: #143258;
 
+}
+.form_holder form{
+    text-align: center;
+}
+.form_holder form input{
+    margin: 10px auto;
+}
+.form_holder form textarea{
+    margin: 10px auto;
 }
 
 
+.scroller{
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 100px auto;
+    background-color: green;
+    border-radius: 50%;
+}
+.scroller:after,
+.scroller:before{
+    content: '';
+    background-color: #4793FF;
+    position: absolute;
+    width: 35%;
 
+    height: 2px;
+    transition: all 0.3s ease 0s;
+}
+.scroller:before{
+    top: 44%;
+    left: 22%;
+    background-color: grey;
+    transform: rotate(135deg);
 
+}
+.scroller:after{
+    bottom: 52%;
+    left: 44%;
+    background-color: grey;
+    transform: rotate(-135deg);
+}
+
+.wp_container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wp{
+    width: 100%;
+}
+.wp_info{
+    position: absolute;
+
+    color: #ffffff;
+    font-size: 20px;
+    width: 30%;
+    height: fit-content;
+}
+.wp_info h1{
+    font-family: 'Ysabeau Infant', sans-serif;
+    text-align: center;
+}
+.wp_info h3{
+    font-family: 'Ysabeau Infant', sans-serif;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.sixth_container{
+    width: 100%;
+    height: 45em;
+}
+.sixth_title{
+    font-size: 30px;
+    font-family: 'Ysabeau Infant', sans-serif;
+    color: #143258;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.sixth_holder{
+
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.sixth_img_holder{
+    width: 50%;
+    height: 10em;
+}
+.sixth_img_holder img{
+    width: 50%;
+}
+.sixth_info_holder{
+    width: 50%;
+    font-size: 20px;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
 
 
 @media (max-width:900px) {
+
+
+    .how-we-work-timeline--container .timeline-step:nth-child(odd) .step-container:before
+    {
+        right: 290px
+    }
+    form button{
+        width: 65%;
+    }
+
     .how-we-work-timeline--container .step-container:before
     {
         top:153px;

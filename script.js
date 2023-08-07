@@ -21,6 +21,16 @@ $(document).ready(function () {
     const $button = document.getElementById('button_consult');
     const $form = document.getElementsByClassName('fourth_container');
 
+    $(".button_close").click(function (){
+        if ($('.header_burger').hasClass('active')){
+            $('.header_burger,.menuBar').toggleClass('active');
+            $('body').toggleClass('lock');
+        }
+        else{
+            $('.header_burger,.menuBar').toggleClass('active');
+        }
+    });
+
     $("#button_consult").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".form_container").offset().top
