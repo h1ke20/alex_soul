@@ -79,6 +79,38 @@ $(document).ready(function () {
             });
         }
     });
+    $(function (){
+        let scroll_timer;
+        let displayed = false;
+        let $message = $('.scroller');
+        let $window = $(window);
+        let top = $(document.body).children(0).position().top;
+
+        $window.scroll(function () {
+            window.clearTimeout(scroll_timer);
+            scroll_timer = window.setTimeout(function () {
+                if($window.scrollTop() <= top)
+                {
+                    displayed = false;
+                    $message.fadeOut(100);
+                }
+                else if(displayed == false)
+                {
+                    displayed = true;
+                    $message.stop(true, true).fadeIn(500).click(function () {
+                        $message.fadeOut(100);
+                    });
+                }
+            }, 100);
+        });
+
+        $('.scroller').click(function() {
+
+            window.scrollTo(0, 0);
+        });
+    })
+
+
 });
 
 

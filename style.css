@@ -801,8 +801,9 @@ body {
     text-align: center;
     font-family: 'Ysabeau Infant', sans-serif;
     font-size: 25px;
-    color: #ffffff;
+    color: #143258;
     padding: 40px 0 20px 0;
+    text-transform: uppercase;
 }
 
 .form_holder{
@@ -889,17 +890,25 @@ form button:hover{
 
 .scroller{
     display: block;
-    position: absolute;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
     width: 50px;
     height: 50px;
-    margin: 100px auto;
-    background-color: green;
+    background-color: rgba(0,0,0,0.3);
     border-radius: 50%;
+    z-index: 50;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+.scroller:hover{
+    background-color: rgba(0,0,0,0.5);
 }
 .scroller:after,
 .scroller:before{
     content: '';
-    background-color: #4793FF;
+    background-color: #ffffff;
     position: absolute;
     width: 35%;
 
@@ -909,14 +918,12 @@ form button:hover{
 .scroller:before{
     top: 44%;
     left: 22%;
-    background-color: grey;
     transform: rotate(135deg);
 
 }
 .scroller:after{
     bottom: 52%;
     left: 44%;
-    background-color: grey;
     transform: rotate(-135deg);
 }
 
@@ -929,6 +936,10 @@ form button:hover{
 }
 .wp{
     width: 100%;
+}
+.wp_mob{
+    width: 100%;
+    display: none;
 }
 .wp_info{
     position: absolute;
@@ -947,6 +958,8 @@ form button:hover{
     margin-top: 10px;
     text-align: right;
 }
+
+
 
 .sixth_container{
     width: 100%;
@@ -983,6 +996,45 @@ form button:hover{
 
 
 @media (max-width:900px) {
+
+    .wp{
+        width: 100%;
+        display: none;
+    }
+    .wp_mob{
+        width: 100%;
+        display: block;
+    }
+    .wp_info {
+        width: 55%;
+    }
+    .sixth_container{
+        height: fit-content;
+        padding-bottom: 70px;
+    }
+    .sixth_holder {
+        display: block;
+    }
+
+    .sixth_img_holder{
+        width: 68%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding-bottom: 25px;
+    }
+
+    .sixth_img_holder img{
+        width: 100%;
+    }
+
+    .sixth_info_holder{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
 
 
     .how-we-work-timeline--container .timeline-step:nth-child(odd) .step-container:before
