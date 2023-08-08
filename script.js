@@ -62,6 +62,8 @@ $(document).ready(function () {
         $('body').toggleClass('lock');
     })
 
+
+
     $("#phone").mask("+7 (999) 999-99-99");
 
     $('.send-form').click(function (){
@@ -84,6 +86,8 @@ $(document).ready(function () {
             });
         }
     });
+
+
     $(function (){
         let scroll_timer;
         let displayed = false;
@@ -112,6 +116,7 @@ $(document).ready(function () {
         $('.scroller').click(function() {
 
             window.scrollTo(0, 0);
+
         });
     })
 
