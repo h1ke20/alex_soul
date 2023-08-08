@@ -890,6 +890,7 @@ form button:hover{
 .form_wp_icon{
     width: 28%;
     z-index: 1;
+    opacity: 0.5;
 }
 
 
