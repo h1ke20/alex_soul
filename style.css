@@ -1031,6 +1031,7 @@ form button:hover{
     width: 100%;
     height: max-content;
     background-color: #ffffff;
+    margin-bottom: 60px;
 }
 
 .footer_contacts_holder{
