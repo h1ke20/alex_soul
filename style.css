@@ -14,7 +14,7 @@ a{
     color: #143258;
     outline: none;
 }
-body.lock{
+.mobile.lock{
     overflow: hidden;
 }
 
@@ -208,7 +208,7 @@ body.lock{
 
 .info_container{
     width: 100%;
-    height: 44em;
+    height: 48em;
     background: url("img/wallpaper2.jpg") 0 0/cover no-repeat;
     display: flex;
     justify-content: center;
@@ -221,8 +221,21 @@ body.lock{
     color: #ffffff;
     line-height: 1;
 }
+
+.info_holder_container{
+    width: fit-content;
+    padding: 0 60px;
+    height: 30em;
+    box-shadow: -5px 5px 5px rgba(0,0,0, .5), 5px 5px 5px rgba(0,0,0, .5) ;
+    background: rgba(0,0,0, .3);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .info_holder{
-    margin-top: -100px;
+
 }
 
 .info_holder hr{
@@ -555,7 +568,7 @@ body {
     margin-bottom: 200px;
 }
 .how-we-work-timeline--container h5 {
-// font: 500 22px/1.45 'proxima nova',sans-serif;
+    font: 500 22px/1.45 'proxima nova',sans-serif;
     font-size: 2em;
     line-height: 1.25;
     margin: 0;
@@ -818,6 +831,7 @@ body {
 form{
     border: 2px solid #ffffff;
     border-radius: 20px;
+    box-shadow: -5px 5px 5px rgba(0,0,0, .5), 5px 5px 5px rgba(0,0,0, .5);
     padding: 15px;
     width: 30%;
 
@@ -915,7 +929,7 @@ form button:hover{
     height: 50px;
     background-color: rgba(0,0,0,0.3);
     border-radius: 50%;
-    z-index: 50;
+    z-index: 4;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 
@@ -961,7 +975,7 @@ form button:hover{
 }
 .wp_info{
     position: absolute;
-
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     color: #ffffff;
     font-size: 20px;
     width: 30%;
@@ -1013,8 +1027,182 @@ form button:hover{
     font-family: 'Ysabeau Infant', sans-serif;
 }
 
+.footer_container{
+    width: 100%;
+    height: max-content;
+    background-color: #ffffff;
+}
+
+.footer_contacts_holder{
+    width: 100%;
+    height: max-content;
+    /*background: #2262d5;*/
+    color: #143258;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer_contacts_holder h1{
+    padding: 50px 0 50px;
+}
+
+.footer_contacts{
+    width: 70%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #143258;
+    padding-bottom: 50px;
+    padding-left: 60px;
+}
+
+.footer_contacts_icon_text{
+    font-family: 'Nunito', bold;
+    font-size: 16px;
+    padding: 0 100px 0 10px;
+}
+
+
+svg{
+    width: 35px;
+    fill: #143258;
+}
+
+.footer_contacts_component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+}
+
+footer{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6CD2D7;
+}
+
+.footer_info{
+    width: 33%;
+    height: max-content;
+    color: #143258;
+    font-family: 'Nunito', bold;
+
+}
+
+
+
+.footer_info_holder{
+    width: fit-content;
+    height: max-content;
+    margin-left: 80px;
+}
+
+.footer_info svg{
+    width: 25px;
+}
+#loc{
+    width: 20px;
+}
+.footer_time_info svg{
+    padding-right: 5px;
+}
+
+.footer_location_info svg{
+    padding-right: 10px;
+}
+
+.footer_logo{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 150px;
+}
+
+.footer_logo img{
+    width: 8em;
+}
+
+.footer_chanel{
+    width: 33%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chanel_info{
+    color: #143258;
+    font-family: 'Nunito', bold;
+    width: fit-content;
+    height: max-content;
+    margin-left: 70px;
+}
+
+.chanel_info div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+/*.footer_chanel h2{*/
+/*    text-align: center;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+.chanel_info a{
+    padding-left: 5px;
+}
+
+.chanel_info svg{
+    width: 25px;
+}
+
+.footer_con{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+.footer_con:last-child{
+    padding-top: 20px;
+}
+
+
 
 @media (max-width:900px) {
+    .footer_contacts{
+        display: block;
+        width: 100%;
+    }
+
+    .footer_contacts_component{
+        text-align: center;
+        height: 85px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+    }
+    .footer_contacts_component a, .footer_contacts_component p{
+
+        font-size: 20px;
+    }
+    .footer_contacts_component:nth-child(2) svg{
+        width: 37px;
+    }
+
+    svg{
+        width: 40px;
+    }
+
     .form_title_holder{
 
         font-size: 15px;
@@ -1203,14 +1391,24 @@ form button:hover{
     .info_container h3{
         font-size: 15px;
     }
-    .info_holder{
-        margin-top: -100px;
+
+    .info_holder_container{
         width: 55%;
+        height: 25em;
+    }
+
+    .info_holder{
+        width: 100%;
         text-align: center;
     }
     .info_holder .button_info {
         font-size: 11px;
+        border: 1px solid #ffffff;
     }
+    .button_consult{
+        color: #ffffff;
+    }
+
     .button_services{
         padding: 10px 20px;
         margin-left: 0;
