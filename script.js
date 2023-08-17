@@ -14,7 +14,8 @@ $(document).ready(function () {
    $('.header_burger').click(function (event){
        $('.header_burger,.menuBar').toggleClass('active');
        $('body').toggleClass('lock');
-   })
+   });
+
    $('.exit').click(function (event){
        $(this).toggleClass('active');
        let id = this.id;
@@ -29,8 +30,6 @@ $(document).ready(function () {
            $('#third_list_info').toggleClass('active');
 
    })
-    const $button = document.getElementById('button_consult');
-    const $form = document.getElementsByClassName('fourth_container');
 
     $(".button_close").click(function (){
         if ($('.header_burger').hasClass('active')){
@@ -47,38 +46,30 @@ $(document).ready(function () {
             scrollTop: $(".form_container").offset().top
         }, 500);
     });
+
     $(".services_button").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".container").offset().top
         }, 500);
     });
+
     $(".soul_button").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".fourth_container").offset().top
         }, 500);
     });
+
     $(".aboutMe_button").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".sixth_container").offset().top
         }, 500);
     });
 
-    // $('.contacts_button').click(function (event){
-    //     $('.contacts_container').toggleClass('active');
-    //     $('body').toggleClass('lock');
-    // })
     $('.contacts_button').click(function (event){
         $([document.documentElement, document.body]).animate({
             scrollTop: $(".footer_container").offset().top
         }, 500);
     })
-
-    // $('.exit_contacts').click(function (event){
-    //     $('.contacts_container').toggleClass('active');
-    //     $('body').toggleClass('lock');
-    // })
-
-
 
     $("#phone").mask("+7 (999) 999-99-99");
 
@@ -102,7 +93,6 @@ $(document).ready(function () {
             });
         }
     });
-
 
     $(function (){
         let scroll_timer;
@@ -134,12 +124,9 @@ $(document).ready(function () {
         });
 
         $('.scroller').click(function() {
-
             window.scrollTo(0, 0);
-
         });
     })
-
 
 });
 
