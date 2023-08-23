@@ -17,6 +17,38 @@ a{
     outline: none;
 }
 
+#form_status{
+    color: green;
+    display: none;
+}
+
+#form_status.active{
+    display: block;
+    padding-top: 15px;
+}
+
+#form_status_fail{
+    color: red;
+    display: none;
+}
+
+#form_status_fail.active{
+    display: block;
+    padding-top: 15px;
+}
+
+#user_form  input {
+    border: 2px solid transparent;
+}
+
+#user_form input.fail {
+    border: 2px solid red;
+}
+
+/*textarea.fail {*/
+/*    border: 2px solid red;*/
+/*}*/
+
 .mobile.lock{
     overflow: hidden;
 }

@@ -19,6 +19,14 @@
     <script src="script.js"></script>
     <script src="jquery.maskedinput.js"></script>
     <script src="jquery.validate.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("I5Su2ReqbU6_w5GNJ");
+        })();
+    </script>
 </head>
 <body>
 <div class="scroller">
@@ -251,15 +259,16 @@
         <div class="form_wp_icon_holder">
             <img src="img/Logo_Alex2.png" alt="" class="form_wp_icon">
         </div>
-        <form action="sender.php" method="post">
-            <input type="text" name="name" placeholder="Имя" required>
-            <input type="text" name="LastName" placeholder="Фамилия" required>
-            <input type="text" name="Surname" placeholder="Отчество (при наличии)">
-            <input type="text" id="phone" name="phone" placeholder="Телефон" required>
-            <input type="text" name="email" placeholder="Email" required>
-            <textarea type="text" name="text" placeholder="Расскажите о себе (любимое число, профессия, семейное положение)"></textarea>
+        <form action="sender.php" id="user_form" method="post">
+            <input type="text" id="nameField" name="name" placeholder="Имя" required>
+            <input type="text" id="surnameField" name="LastName" placeholder="Фамилия" required>
+            <input type="text" id="middleName" name="Surname" placeholder="Отчество (при наличии)">
+            <input type="text" id="phone" name="phone" placeholder="Телефон: +71234567890 " required>
+            <input type="text" id="emailField" name="email" placeholder="Email" required>
+            <textarea type="text" id="user_message" name="text" placeholder="Расскажите о себе (любимое число, профессия, семейное положение)"></textarea>
             <button type="button" class="send-form">Отправить</button>
-            <div class="status"></div>
+            <div id="form_status">Форма отправлена успешно!</div>
+            <div id="form_status_fail">Форма отправлена успешно!</div>
         </form>
     </div>
 </div>
