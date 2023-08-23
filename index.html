@@ -263,12 +263,13 @@
             <input type="text" id="nameField" name="name" placeholder="Имя" required>
             <input type="text" id="surnameField" name="LastName" placeholder="Фамилия" required>
             <input type="text" id="middleName" name="Surname" placeholder="Отчество (при наличии)">
-            <input type="text" id="phone" name="phone" placeholder="Телефон: +71234567890 " required>
+            <input type="text" id="phone" name="phone" placeholder="Телефон (+71234567890) " required>
             <input type="text" id="emailField" name="email" placeholder="Email" required>
             <textarea type="text" id="user_message" name="text" placeholder="Расскажите о себе (любимое число, профессия, семейное положение)"></textarea>
-            <button type="button" class="send-form">Отправить</button>
+            <button type="button" id="send_form" class="send-form">Отправить</button>
             <div id="form_status">Форма отправлена успешно!</div>
-            <div id="form_status_fail">Форма отправлена успешно!</div>
+            <div id="form_status_fail">Ошибка отправки</div>
+            <div id="form_wrong_data">Ошибка отправки, проверьте данные!</div>
         </form>
     </div>
 </div>

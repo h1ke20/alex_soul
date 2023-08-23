@@ -77,23 +77,25 @@ $(document).ready(function () {
 
         let form = $(this).closest('form');
 
-        console.log(formValidation())
-        if (true){
-            console.log('yuhu')
-            // let actUrl = form.attr('action');
-            // $.ajax({
-            //     url: actUrl,
-            //     type: 'post',
-            //     dataType: 'html',
-            //     data: form.serialize(),
-            //     success: function (data){
-            //         form.find('.status').html('Форма отправлена успешно');
-            //     },
-            //     error: function (){
-            //         form.find('.status').html('Серверная ошибка');
-            //     }
-            // });
-        }
+        formValidation();
+
+        // console.log(formValidation())
+        // if (true){
+        //     console.log('yuhu')
+        //     // let actUrl = form.attr('action');
+        //     // $.ajax({
+        //     //     url: actUrl,
+        //     //     type: 'post',
+        //     //     dataType: 'html',
+        //     //     data: form.serialize(),
+        //     //     success: function (data){
+        //     //         form.find('.status').html('Форма отправлена успешно');
+        //     //     },
+        //     //     error: function (){
+        //     //         form.find('.status').html('Серверная ошибка');
+        //     //     }
+        //     // });
+        // }
     });
 
     $(function (){
@@ -143,6 +145,14 @@ $(document).ready(function () {
         let resultMobile = mobileRegex.test(mobile);
 
         console.log(`${mobile.length} ${mobile}`)
+            nameField.classList?.remove('fail');
+            surnameField.classList?.remove('fail');
+            middleName.classList?.remove('fail');
+            emailField.classList?.remove('fail');
+            phone.classList?.remove('fail');
+            form_status.classList?.remove('active');
+            form_status_fail.classList?.remove('active');
+            form_wrong_data.classList?.remove('active');
         if(resultName && resultSurname
             && (resultMiddleName || middleName.value === '') &&
             resultEmail && resultMobile && mobile.length == 10) {
@@ -151,10 +161,12 @@ $(document).ready(function () {
             surnameField.classList?.remove('fail');
             middleName.classList?.remove('fail');
             emailField.classList?.remove('fail');
-            mobile.classList?.remove('fail');
+            phone.classList?.remove('fail');
             form_status.classList?.remove('active');
             form_status_fail.classList?.remove('active');
+            form_wrong_data.classList?.remove('active');
 
+            send_form.classList.add('disabled');
             let params = {
                 first_name: nameField.value,
                 last_name: surnameField.value,
@@ -168,9 +180,13 @@ $(document).ready(function () {
                 console.log('success' + typeof res.status);
                 if(res.status === 200) {
                     form_status.classList.add('active');
+                    form_status_fail.classList?.remove('active');
                     user_form.reset();
+                    send_form.classList.remove('disabled');
                 } else {
                     form_status_fail.classList.add('active');
+                    form_status.classList?.remove('active');
+                    send_form.classList.remove('disabled');
                 }
             });
 
@@ -191,6 +207,9 @@ $(document).ready(function () {
             if(!resultMobile || mobile.length !== 10) {
                 phone.classList.add('fail');
             }
+            form_status.classList?.remove('active');
+            form_status_fail.classList?.remove('active');
+            form_wrong_data.classList.add('active');
         }
 
     }
