@@ -50,7 +50,7 @@ a{
     display: none;
 }
 #form_wrong_data.active {
-
+    padding-top: 15px;
     display: block;
 }
 
