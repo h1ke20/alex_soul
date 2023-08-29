@@ -133,7 +133,7 @@ $(document).ready(function () {
     })
 
     function formValidation() {
-        let nameRegex = /^[a-zA-Z ]{2,30}$/;
+        let nameRegex = /*/^[a-zA-Z ]{2,30}$/;*/ /[a-zA-Za-åa-ö-w-я]/
         let mobileRegex = /^([0|\+[0-9]{1,5})?([7-9][0-9]{9})$/;
         let emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
         let mobile = phone.value.slice(2).split(' ').join('').split('(').join('')
